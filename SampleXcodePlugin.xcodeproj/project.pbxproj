@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC75A94A17E9BF310075249B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC75A94917E9BF310075249B /* Cocoa.framework */; };
+		DC75A95417E9BF310075249B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC75A95217E9BF310075249B /* InfoPlist.strings */; };
+		DC75A95D17E9C2120075249B /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DC75A95C17E9C2120075249B /* Plugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC75A94617E9BF300075249B /* SampleXcodePlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleXcodePlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC75A94917E9BF310075249B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC75A94C17E9BF310075249B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC75A94D17E9BF310075249B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC75A94E17E9BF310075249B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC75A95117E9BF310075249B /* SampleXcodePlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleXcodePlugin-Info.plist"; sourceTree = "<group>"; };
+		DC75A95317E9BF310075249B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC75A95517E9BF310075249B /* SampleXcodePlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleXcodePlugin-Prefix.pch"; sourceTree = "<group>"; };
+		DC75A95B17E9C2120075249B /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		DC75A95C17E9C2120075249B /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC75A94317E9BF300075249B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC75A94A17E9BF310075249B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC75A93D17E9BF300075249B = {
+			isa = PBXGroup;
+			children = (
+				DC75A94F17E9BF310075249B /* SampleXcodePlugin */,
+				DC75A94817E9BF300075249B /* Frameworks */,
+				DC75A94717E9BF300075249B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC75A94717E9BF300075249B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC75A94617E9BF300075249B /* SampleXcodePlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC75A94817E9BF300075249B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC75A94917E9BF310075249B /* Cocoa.framework */,
+				DC75A94B17E9BF310075249B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC75A94B17E9BF310075249B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC75A94C17E9BF310075249B /* Foundation.framework */,
+				DC75A94D17E9BF310075249B /* CoreData.framework */,
+				DC75A94E17E9BF310075249B /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DC75A94F17E9BF310075249B /* SampleXcodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				DC75A95017E9BF310075249B /* Supporting Files */,
+				DC75A95B17E9C2120075249B /* Plugin.h */,
+				DC75A95C17E9C2120075249B /* Plugin.m */,
+			);
+			path = SampleXcodePlugin;
+			sourceTree = "<group>";
+		};
+		DC75A95017E9BF310075249B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC75A95117E9BF310075249B /* SampleXcodePlugin-Info.plist */,
+				DC75A95217E9BF310075249B /* InfoPlist.strings */,
+				DC75A95517E9BF310075249B /* SampleXcodePlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC75A94517E9BF300075249B /* SampleXcodePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC75A95817E9BF310075249B /* Build configuration list for PBXNativeTarget "SampleXcodePlugin" */;
+			buildPhases = (
+				DC75A94217E9BF300075249B /* Sources */,
+				DC75A94317E9BF300075249B /* Frameworks */,
+				DC75A94417E9BF300075249B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleXcodePlugin;
+			productName = SampleXcodePlugin;
+			productReference = DC75A94617E9BF300075249B /* SampleXcodePlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC75A93E17E9BF300075249B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Oleksiy Radyvanyuk";
+			};
+			buildConfigurationList = DC75A94117E9BF300075249B /* Build configuration list for PBXProject "SampleXcodePlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC75A93D17E9BF300075249B;
+			productRefGroup = DC75A94717E9BF300075249B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC75A94517E9BF300075249B /* SampleXcodePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC75A94417E9BF300075249B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC75A95417E9BF310075249B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC75A94217E9BF300075249B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC75A95D17E9C2120075249B /* Plugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC75A95217E9BF310075249B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC75A95317E9BF310075249B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC75A95617E9BF310075249B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC75A95717E9BF310075249B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC75A95917E9BF310075249B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleXcodePlugin/SampleXcodePlugin-Prefix.pch";
+				INFOPLIST_FILE = "SampleXcodePlugin/SampleXcodePlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		DC75A95A17E9BF310075249B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "${HOME}";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleXcodePlugin/SampleXcodePlugin-Prefix.pch";
+				INFOPLIST_FILE = "SampleXcodePlugin/SampleXcodePlugin-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC75A94117E9BF300075249B /* Build configuration list for PBXProject "SampleXcodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC75A95617E9BF310075249B /* Debug */,
+				DC75A95717E9BF310075249B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC75A95817E9BF310075249B /* Build configuration list for PBXNativeTarget "SampleXcodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC75A95917E9BF310075249B /* Debug */,
+				DC75A95A17E9BF310075249B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC75A93E17E9BF300075249B /* Project object */;
+}
